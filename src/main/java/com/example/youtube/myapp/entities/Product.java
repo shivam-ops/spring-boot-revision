@@ -1,7 +1,16 @@
 package com.example.youtube.myapp.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Product {
+	
+	@Id
+	@GeneratedValue
 	private Integer id;
+	
 	private String name;
 	private int price;
 	
@@ -35,7 +44,11 @@ public class Product {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	
-	
+
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", price=" + price + "]";
+	}	
 	
 }
