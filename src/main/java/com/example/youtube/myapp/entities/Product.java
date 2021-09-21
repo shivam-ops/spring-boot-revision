@@ -14,9 +14,9 @@ public class Product {
 	private String name;
 	private int price;
 	
-//	public Product() {
-//		
-//	}
+	public Product() {
+		
+	}
 	
 	public Product(Integer id, String name, int price) {
 		super();
